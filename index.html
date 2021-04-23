@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		#sectr {
+		  position: absolute;
+		  top: 600px;
+		  left: 1150px;
+		  width: 256px;
+		  height: 144px;
+		}
+
+		.myvideo {
+			object-fit: cover;
+			max-width: 100%;
+			height: auto;
+			transition: transform 2s;
+		}
+
+		.myvideo:hover {
+			-moz-transform: scale(5);
+			-webkit-transform: scale(5);
+			transform: scale(5);
+			transform-origin: right bottom;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div id="sectr">
+	  <video secondary id="myvideo" class="myvideo" autoplay loop muted>
+			<source src="./video/720p30.mp4" type="video/mp4">
+	  </video>
+	</div>
+
+</body>
+</html>
